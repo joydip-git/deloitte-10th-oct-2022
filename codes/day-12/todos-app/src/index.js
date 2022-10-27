@@ -34,13 +34,16 @@ function createRow(records) {
         for (var todo of records) {
             var tr = document.createElement('tr')
 
+            var tdId = document.createElement('td')
+            tdId.innerText = todo.id
+
             var tdTitle = document.createElement('td')
             tdTitle.innerText = todo.title
 
             var tdCompleted = document.createElement('td')
             tdCompleted.innerText = todo.completed ? 'Yes' : 'No'
 
-            tr.append(tdTitle, tdCompleted)
+            tr.append(tdId, tdTitle, tdCompleted)
             tbody.appendChild(tr)
         }
     }
@@ -67,18 +70,34 @@ function filterTodos() {
     var filteredTodoList = todoList.filter(
         function (todo) {
             var todoTitle = todo.title.toLocaleLowerCase()
-            return todoTitle.indexOf(filterText.toLocaleLowerCase()) !== -1 ? true : false
+            return todoTitle.indexOf(filterText.toLocaleLowerCase()) !== -1
         }
     )
     var tbody = document.getElementById('tableBody')
-    if (tbody.childNodes.length > 0) {
-        console.log(tbody.childNodes.length)
-        tbody.childNodes.forEach(n => {
-            console.log(n)
-            tbody.removeChild(n)
-            console.log(tbody.childNodes.length)
-        })
-    }
+    // var allRows = []
+    // for (var todo of filteredTodoList) {
+    //     var tr = document.createElement('tr')
 
+    //     var tdId = document.createElement('td')
+    //     tdId.innerText = todo.id
+
+    //     var tdTitle = document.createElement('td')
+    //     tdTitle.innerText = todo.title
+
+    //     var tdCompleted = document.createElement('td')
+    //     tdCompleted.innerText = todo.completed ? 'Yes' : 'No'
+
+    //     tr.append(tdId, tdTitle, tdCompleted)
+    //     allRows.push(tr)
+    // }
+    //console.log(tbody.children)
+
+    // console.log(tbody.childNodes.length)
+    // for (var index = 1; index < tbody.childNodes.length; index++) {
+    //     console.log('removing node')
+    //     const element = tbody.childNodes[index];
+    //     console.log(element)
+    //     tbody.removeChild(element)
+    // }
     //createRow(filteredTodoList)
 }
