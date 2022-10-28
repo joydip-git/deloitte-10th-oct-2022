@@ -38,7 +38,11 @@ Object.assign(copy, anilObject)
 
 //3. copy properties and corresponding values from one object to another using ES6 new feature 'spread operator (...)'
 
-const copy = { ...anilObject }
+const copy = {
+    ...anilObject,
+    name: 'anil kumar',
+    location: 'Bangalore'
+}
 console.log(anilObject)
 console.log(copy)
 /*
@@ -59,4 +63,23 @@ const copyOfNumbers = [...numbers]
 
 console.log(numbers)
 console.log(copyOfNumbers)
+
+
+const printUtility = {
+    print: function () {
+        console.log('print some document')
+    }
+}
+
+const editUtility = {
+    edit: function () {
+        console.log('edit some document')
+    }
+}
+
+const masterUtility = {
+    ...printUtility,
+    ...editUtility
+}
+console.log(masterUtility)
 

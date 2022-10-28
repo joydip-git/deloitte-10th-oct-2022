@@ -1,20 +1,11 @@
-//Map in JS
-//symbol
-//regular expressions
-//class access specifiers
-// class Person {
-//     #name
-//     #id
-//     #salary
-//     constructor(name, id, salary) {
-//         this.name = name
-//         this.id = id
-//         this.salary = salary
-//     }
-//     print() {
-
-//     }
-// }
+const anilObject = {
+    name: 'anil',
+    id: 1,
+    salary: 1000,
+    print: function () {
+        return `name=${this.name}, id=${this.id}, salary=${this.salary}`
+    }
+}
 
 const message = 'Templated String'
 const hElement = document.createElement('header')

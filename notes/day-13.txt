@@ -8,3 +8,4 @@ ES6
 4. arrow function
 5. class, super, constructor keywords
 6. extends keyword
+
