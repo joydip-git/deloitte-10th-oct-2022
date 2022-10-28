@@ -1,0 +1,10 @@
+World Wide Web Consortium (W3C)
+ECMAScript => Guideline language (ES)
+
+ES6
+1. let and const keywords
+2. object and array destructuring
+3. spread and rest operator
+4. arrow function
+5. class, super, constructor keywords
+6. extends keyword
