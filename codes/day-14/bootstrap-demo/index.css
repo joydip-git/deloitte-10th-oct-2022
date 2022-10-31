@@ -1,0 +1,17 @@
+header {
+  background-color: antiquewhite;
+}
+#mainHeader {
+  font-family: "Courier New", Courier, monospace;
+}
+.headerStyle {
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+.imgStyle {
+  width: 300px;
+  height: 50px;
+  margin: 2px;
+  overflow: hidden;
+}
