@@ -1,0 +1,23 @@
+product entry form (index.html)
+1. product id (text)
+2. product name (text)
+3. price (number)
+4. description (textarea)
+5. image (file)
+6. category (select list - mobile, laptop)
+* this data should created using JS array and the data should be present in the localstorage
+
+JS:
+create a JS class to represent each category in the select list
+category object properties: id, name
+no functional property/method
+
+you need to create some sample category objects, put tose objects in an array and save the array in localstorage (the very first time the aplication runs or loads in the browser). if the data is already present in the localstorage, then just fetch it
+Now, the data from localstorage will be used to dynamically generate the option elements of the select list
+
+now, on the product entry form, when you click the save button, an object of Product class (that you need to create in JS) should be created with data from the form. that product object should be saved in the localstorage through an array of products. if there is already an array containing some product objects present in the localstorage, the new product object should be just added in the same array
+
+now when you visit the products.html page (2nd page in the application), through a table, all the product details should be displayed (image of the product should be the first column)
+
+Note: use bootstrap, create RWD (liek responsive form, table etc.)
+

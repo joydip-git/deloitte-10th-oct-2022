@@ -28,20 +28,24 @@ async function fetchAndSaveData() {
 
 }
 
+function generteTableData(data) {
+    var td = document.createElement('td')
+    td.innerText = data
+    // td.setAttribute('class', 'table-dark')
+    // td.setAttribute('style', 'color:white')
+    return td
+
+}
 function createRow(records) {
     if (records.length > 0) {
         var tbody = document.getElementById('tableBody')
         for (var todo of records) {
             var tr = document.createElement('tr')
+            //tr.setAttribute('class', 'table-dark')
 
-            var tdId = document.createElement('td')
-            tdId.innerText = todo.id
-
-            var tdTitle = document.createElement('td')
-            tdTitle.innerText = todo.title
-
-            var tdCompleted = document.createElement('td')
-            tdCompleted.innerText = todo.completed ? 'Yes' : 'No'
+            var tdId = generteTableData(todo.id)
+            var tdTitle = generteTableData(todo.title)
+            var tdCompleted = generteTableData(todo.completed ? 'yes' : 'no')
 
             tr.append(tdId, tdTitle, tdCompleted)
             tbody.appendChild(tr)
