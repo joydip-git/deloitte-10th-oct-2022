@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Entry Form</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <script src="./styles/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./styles/theme.css">
+    <style>
+        #formSection {
+            margin-top: 20px;
+        }
+
+        .btnStyle {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section id="formSection" class="container">
+            <form method="post">
+                <fieldset>
+                    <legend>Employee Entry Form</legend>
+                </fieldset>
+                <div class="form-group">
+                    <label for="txtId" class="form-label mt-4">Enter Id:&nbsp;</label>
+                    <input type="text" class="form-control" name="productId" id="txtId"
+                        placeholder="enter product id here">
+                </div>
+                <div class="form-group">
+                    <label for="txtName" class="form-label mt-4">Enter Name:&nbsp;</label>
+                    <input type="text" class="form-control" name="productName" id="txtName"
+                        placeholder="enter product name here">
+                </div>
+                <div class="form-group">
+                    <label for="txtDesc" class="form-label mt-4">Enter Description:&nbsp;</label>
+                    <textarea class="form-control" name="description" id="txtDesc"
+                        placeholder="enter product description here"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtPrice" class="form-label mt-4">Enter Price:&nbsp;</label>
+                    <input type="text" class="form-control" name="price" id="txtPrice"
+                        placeholder="enter product price here">
+                </div>
+                <div class="mb-3">
+                    <label for="formImage" class="form-label">Product Image:</label>
+                    <input class="form-control" type="file" id="formImage" name="imageUrl">
+                </div>
+                <div class="form-group">
+                    <label for="ddlCategories" class="form-label mt-4">Select Category:&nbsp;</label>
+                    <select id="ddlCategories" title="categoris" class="form-select" name="categoryInfo">
+                        <option value="0" selected disabled>---select---</option>
+                    </select>
+                </div>
+
+                <div class="btnStyle">
+                    <br>
+                    <input type="button" value="Add" class="btn btn-primary" id="btnAdd">
+                </div>
+            </form>
+
+            <script src="./src/models/category.js"></script>
+            <script src="./src/models/product.js"></script>
+            <script src="./src/repository/data.js"></script>
+            <script src="./src/code-behind/index.js"></script>
+</body>
+
+</html>
