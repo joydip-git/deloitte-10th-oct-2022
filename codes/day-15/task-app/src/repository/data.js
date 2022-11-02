@@ -1,4 +1,4 @@
 const categories = [
     new Category(1, 'laptop'),
-    new Category(2, 'mobile'),
+    new Category(2, 'mobile')
 ]
