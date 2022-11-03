@@ -1,0 +1,26 @@
+$color: pink;
+$font: "Segoe UI";
+$textColor: black;
+body {
+  background-color: $color;
+}
+nav {
+  font-family: $font;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: $textColor;
+  }
+}

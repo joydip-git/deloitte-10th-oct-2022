@@ -1,0 +1,1 @@
+packge managers: NPM (default with Node), yarn, bower

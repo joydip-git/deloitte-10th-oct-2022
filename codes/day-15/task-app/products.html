@@ -6,13 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product List</title>
+    <script src="./styles/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/theme.css">
+    <link rel="stylesheet" href="./styles/products.css">
 </head>
 
 <body>
-    <!-- <img id="imgProd" src="" alt="NA" srcset=""> -->
+    <div id="mainDiv" class="container">
+        <div class="row">
+            <h3 class="text-muted">
+                Product List
+            </h3>
+        </div>
+        <table id="tblProducts" class="table table-dark table-hover">
+            <thead id="theadProducts">
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyProducts">
 
-    <!-- create table but generate rows dynamically-->
-    <!-- link any other JS files if necessary-->
+            </tbody>
+        </table>
+    </div>
     <script src="./src/code-behind/products.js"></script>
 </body>
 

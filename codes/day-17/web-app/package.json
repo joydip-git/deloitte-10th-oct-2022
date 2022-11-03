@@ -1,0 +1,19 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "simple web app",
+  "main": "index.js",
+  "scripts": {
+    "load": "lite-server",
+    "convert": "sass --watch index.scss index.css"
+  },
+  "author": "joydip",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

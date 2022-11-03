@@ -1,0 +1,27 @@
+{
+  "name": "npm-app",
+  "version": "1.0.0",
+  "description": "simple node js and npm app",
+  "main": "./src/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joydip-git/deloitte-10th-oct-2022.git"
+  },
+  "keywords": [
+    "npm",
+    "node"
+  ],
+  "author": "joydip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joydip-git/deloitte-10th-oct-2022/issues"
+  },
+  "homepage": "https://github.com/joydip-git/deloitte-10th-oct-2022#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}

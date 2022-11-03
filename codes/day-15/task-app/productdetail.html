@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <script src="./styles/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/theme.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Detail Of: &nbsp;
+                <h4 id="divHeading"></h4>
+                <a href="#">
+                    Edit
+                </a>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3">Id:&nbsp;</div>
+                        <div class="col-md-6" id="pId"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">Name:&nbsp;</div>
+                        <div class="col-md-6" id="pName"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">Description:&nbsp;</div>
+                        <div class="col-md-6" id="pDesc"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">Price:&nbsp;</div>
+                        <div class="col-md-6" id="pPrice"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">Category:&nbsp;</div>
+                        <div class="col-md-6" id="pCategory"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="center-block img-responsive" src="" title="" alt="NA" id="pImage">
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <a href='./products.html' class="btn btn-default">
+                <i class="glyphicon glyphicon-chevron-left"></i>Back
+            </a>
+        </div>
+    </div>
+    <script src="./src/code-behind/productdetail.js"></script>
+</body>
+
+</html>
