@@ -1,0 +1,37 @@
+.common, .specific, nav {
+  font-family: "Tahoma";
+  height: 50px;
+  background-color: plum;
+}
+
+body {
+  background-color: pink;
+}
+
+.common, .specific, nav {
+  font-family: "Tahoma";
+  height: 50px;
+  background-color: plum;
+}
+
+.specific, nav {
+  border-color: black;
+  border: 1px solid;
+  background-color: bisque;
+  border-radius: 5px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: black;
+}
