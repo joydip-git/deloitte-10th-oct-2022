@@ -1,0 +1,11 @@
+$val: 10px;
+.para {
+  padding: $val $val + 2px $val + 4px $val + 6px;
+  margin: $val;
+  text-decoration: solid;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.para::first-line {
+  font-weight: bold;
+}

@@ -9,6 +9,8 @@
 }
 nav {
   @extend .specific;
+
+  //$color-value:blue;
   ul {
     margin: 0;
     padding: 0;

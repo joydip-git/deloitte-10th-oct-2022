@@ -1,0 +1,19 @@
+@import "common";
+
+.para-regular {
+  //@extend .para;
+  background-color: beige;
+}
+
+.para-primary {
+  //@extend .para;
+  background-color: cornflowerblue;
+}
+.para-danger {
+  //@extend .para;
+  background-color: brown;
+}
+.para-hover:hover {
+  background-color: chocolate;
+  font-size: large;
+}

@@ -1,0 +1,28 @@
+.para {
+  padding: 10px 12px 14px 16px;
+  margin: 10px;
+  text-decoration: solid;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.para::first-line {
+  font-weight: bold;
+}
+
+.para-regular {
+  background-color: beige;
+}
+
+.para-primary {
+  background-color: cornflowerblue;
+}
+
+.para-danger {
+  background-color: brown;
+}
+
+.para-hover:hover {
+  background-color: chocolate;
+  font-size: large;
+}

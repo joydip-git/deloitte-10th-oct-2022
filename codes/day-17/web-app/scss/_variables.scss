@@ -2,6 +2,13 @@ $color: pink;
 $font: "Tahoma";
 $textColor: black;
 
+// $color-map: (
+//   "regular-color": $color,
+//   "hover-color": $color,
+// );
+// @each $colorName in $color-map {
+//   --bs-scrollbar-button: $colorName;
+// }
 .common {
   font-family: $font;
   height: 50px;

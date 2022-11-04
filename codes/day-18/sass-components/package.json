@@ -1,0 +1,19 @@
+{
+  "name": "sass-components",
+  "version": "1.0.0",
+  "description": "demo on sass components",
+  "main": "index.js",
+  "scripts": {
+    "convert": "sass --watch --no-source-map ./styles/scss:./styles/output",
+    "load": "lite-server"
+  },
+  "author": "joydip",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "sass": "^1.56.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
