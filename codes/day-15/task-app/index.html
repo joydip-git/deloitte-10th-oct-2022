@@ -20,6 +20,41 @@
 
 <body>
 
+    <div class="modal" tabindex="-1" id="addModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Message:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Data has been added successfully</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm:</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Click on Stay button to add further records and click on Navigate button to move to next page</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stay</button>
+                    <button type="button" id="btnNavigate" class="btn btn-primary">Navigate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <section id="formSection" class="container">
             <form method="post">
@@ -59,7 +94,8 @@
 
                 <div class="btnStyle">
                     <br>
-                    <input type="button" value="Add" class="btn btn-primary" id="btnAdd">
+                    <input type="button" value="Add" class="btn btn-primary" id="btnAdd" data-bs-toggle="modal"
+                        data-bs-target="#addModal">
                 </div>
             </form>
         </section>

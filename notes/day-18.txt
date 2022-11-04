@@ -1,0 +1,24 @@
+custom data attributes
+<button data-myname='Joydip' id='btnFirst'></button
+
+
+document.getElementById('btnFirst').getAttribute('data-myname')
+
+data-*
+
+custom attributes:
+data-bs-dismiss
+data-bs-target
+data-bs-toggle
+
+
+methods:
+show
+hide
+
+events:
+show.bs.modal
+shown.bs.modal
+
+hide.bs.modal
+hidden.bs.modal

@@ -32,6 +32,17 @@ function loadCategoriesFromLocalstorage() {
     const btnObj = document.getElementById('btnAdd')
     // btnObj.addEventListener('click', saveProduct)
     btnObj.onclick = saveProduct
+
+    const addModal = document.getElementById('addModal')
+    addModal.addEventListener('hidden.bs.modal', () => {
+        const confirmModalObj = document.getElementById('confirmModal')
+        const cModal = new bootstrap.Modal(confirmModalObj)
+        cModal.show()
+    })
+    const btnNavigateObj = document.getElementById('btnNavigate')
+    btnNavigateObj.addEventListener('click', () => {
+        window.location.href = "../products.html";
+    })
 }
 
 //Part-2:
@@ -79,9 +90,9 @@ function saveProduct() {
     //b. that time, you can get the converted raw buffered data using 'result' property of the FileReader object
     reader.readAsDataURL(imageFile)
 
-    if (!window.confirm('do you want to add further records?')) {
-        window.location.href = "../products.html";
-    }
+    // if (!window.confirm('do you want to add further records?')) {
+    //     window.location.href = "../products.html";
+    // }
 }
 
 window.addEventListener('load', loadCategoriesFromLocalstorage)
