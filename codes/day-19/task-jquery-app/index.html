@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Entry Form</title>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./styles/theme.css">
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+
+<body>
+
+    <div class="modal" tabindex="-1" id="addModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Message:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Data has been added successfully</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm:</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Click on Stay button to add further records and click on Navigate button to move to next page</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stay</button>
+                    <button type="button" id="btnNavigate" class="btn btn-primary">Navigate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="formSection" class="container">
+            <form method="post">
+                <fieldset>
+                    <legend>Employee Entry Form</legend>
+                </fieldset>
+                <div class="form-group">
+                    <label for="txtId" class="form-label mt-4">Enter Id:&nbsp;</label>
+                    <input type="text" class="form-control" name="productId" id="txtId"
+                        placeholder="enter product id here">
+                </div>
+                <div class="form-group">
+                    <label for="txtName" class="form-label mt-4">Enter Name:&nbsp;</label>
+                    <input type="text" class="form-control" name="productName" id="txtName"
+                        placeholder="enter product name here">
+                </div>
+                <div class="form-group">
+                    <label for="txtDesc" class="form-label mt-4">Enter Description:&nbsp;</label>
+                    <textarea class="form-control" name="description" id="txtDesc"
+                        placeholder="enter product description here"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtPrice" class="form-label mt-4">Enter Price:&nbsp;</label>
+                    <input type="text" class="form-control" name="price" id="txtPrice"
+                        placeholder="enter product price here">
+                </div>
+                <div class="mb-3">
+                    <label for="formImage" class="form-label">Product Image:</label>
+                    <input class="form-control" type="file" id="formImage" name="imageUrl">
+                </div>
+                <div class="form-group">
+                    <label for="ddlCategories" class="form-label mt-4">Select Category:&nbsp;</label>
+                    <select id="ddlCategories" title="categoris" class="form-select" name="categoryInfo">
+                        <option value="0" selected disabled>---select---</option>
+                    </select>
+                </div>
+
+                <div class="btnStyle">
+                    <br>
+                    <input type="button" value="Add" class="btn btn-primary" id="btnAdd" data-bs-toggle="modal"
+                        data-bs-target="#addModal">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="./src/models/category.js"></script>
+    <script src="./src/models/product.js"></script>
+    <script src="./src/repository/data.js"></script>
+    <script src="./src/code-behind/index.js"></script>
+</body>
+
+</html>
