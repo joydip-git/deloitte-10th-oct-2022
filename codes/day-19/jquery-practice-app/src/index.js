@@ -52,7 +52,28 @@ function loadOptionsUisngJQuery() {
             }
         )
 }
+function handleButtonClick() {
+    // $('button.btn.btn-primary')
+    //     .on(
+    //         'click',
+    //         (eventObj) => {
+    //             window.alert('clicked')
+    //             console.log(this)
+    //             console.log(eventObj.target.innerText)
+    //         }
+    //     )
+    $('button.btn.btn-primary')
+        .on(
+            'click',
+            function (eventObj) {
+                window.alert('clicked')
+                console.log(this.innerText)
+                // console.log(eventObj.target.innerText)
+            }
+        )
+}
 $(function () {
     loadListItemsUsingjquery()
     loadOptionsUisngJQuery()
+    handleButtonClick()
 })
