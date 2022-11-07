@@ -31,7 +31,6 @@ function loadOptionsUisngJQuery() {
     let index = 0
     items.forEach(
         (name) => {
-
             const option = $(
                 '<option/>',
                 {
@@ -43,10 +42,14 @@ function loadOptionsUisngJQuery() {
         }
     )
 
-    $('#ddlNames').on('change', (event) => {
-        const selectedOption = event.target.children[event.target.selectedIndex]
-        window.alert(`${selectedOption.text}, ${selectedOption.value}`)
-    })
+    $('#ddlNames')
+        .on('change',
+            (eventObj) => {
+                const selectedOption = eventObj.target.children[eventObj.target.selectedIndex]
+                //const selectedOption = this.options[this.selectedIndex]
+                window.alert(`${selectedOption.text}, ${selectedOption.value}`)
+            }
+        )
 }
 $(function () {
     loadListItemsUsingjquery()
