@@ -1,0 +1,16 @@
+{
+  "name": "jquery-practice-app",
+  "version": "1,0.0",
+  "description": "jquery practice",
+  "scripts": {
+    "load": "lite-server"
+  },
+  "author": "joydip",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "jquery": "^3.6.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

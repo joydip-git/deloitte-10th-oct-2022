@@ -1,0 +1,17 @@
+{
+  "name": "jquery-app",
+  "version": "1.0.0",
+  "description": "jQuery demo app",
+  "main": "index.js",
+  "scripts": {
+    "load": "lite-server"
+  },
+  "author": "joydip",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
