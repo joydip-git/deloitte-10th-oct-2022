@@ -45,7 +45,8 @@ function loadOptionsUisngJQuery() {
     $('#ddlNames')
         .on('change',
             (eventObj) => {
-                const selectedOption = eventObj.target.children[eventObj.target.selectedIndex]
+                const eventTarget = eventObj.target
+                const selectedOption = eventTarget.children[eventTarget.selectedIndex]
                 //const selectedOption = this.options[this.selectedIndex]
                 window.alert(`${selectedOption.text}, ${selectedOption.value}`)
             }
