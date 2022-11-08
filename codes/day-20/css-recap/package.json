@@ -1,0 +1,17 @@
+{
+  "name": "css-recap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "convert": "sass --watch --no-source-map ./styles/scss:./styles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "jquery": "^3.6.1",
+    "sass": "^1.56.0"
+  }
+}
