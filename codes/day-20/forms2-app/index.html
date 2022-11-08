@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms2.0</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/action_page.php" id="frm">
+            <label for="fname">First Name</label>
+            <input type="text" class="from-group" id="fname" name="firstname" placeholder="Your name.." required
+                autofocus>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" class="from-group" placeholder="Your last name.." required>
+
+            <label for="lname">Email</label>
+            <input type="email" id="emailid" name="emailid" class="from-group" placeholder="Your mail id.." required>
+
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" required class="from-group">
+
+            <label for="dateofBirth">DOB:</label>
+            <input type="datetime-local" id="dateofBirth" name="dateofBirth" required class="from-group">
+            <br>
+            <br>
+            <label for="country">Country</label>
+            <select id="country" name="country" title="countries" required class="from-select">
+                <option value="select" disabled selected>---select---</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select a valid state.
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

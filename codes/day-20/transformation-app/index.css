@@ -1,0 +1,26 @@
+@keyframes rotation {
+  from {
+    /* transform: rotate3d(10, 20, 30, 0deg); */
+    transform: skew(10deg, 20deg);
+  }
+  to {
+    /* transform: rotate3d(1, 1, 1, 360deg); */
+    transform: skew(-50deg, 20deg);
+  }
+}
+div {
+  width: 300px;
+  height: 100px;
+}
+
+div#myDiv {
+  border: 1px solid transparent;
+  box-shadow: 10px 10px 5px lightcoral;
+}
+div#myDiv:hover {
+  background-color: yellow;
+  animation-name: rotation;
+  animation-duration: 3s;
+  /* transform: rotate3d(1, 1, 1, 60deg); */
+  /* transform: skew(-10deg, 20deg); */
+}
