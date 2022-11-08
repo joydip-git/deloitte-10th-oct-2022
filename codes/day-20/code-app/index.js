@@ -41,5 +41,10 @@ const obj = {
 
 localStorage.setItem('objData', JSON.stringify(obj))
 
-localStorage.getItem('objData')
+$(function () {
+    $('#btnLoad').on('click', function () {
+        localStorage.getItem('objData')
+    })
+})
+
 
