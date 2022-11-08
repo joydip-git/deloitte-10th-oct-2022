@@ -1,0 +1,14 @@
+{
+  "name": "less-app",
+  "version": "1.0.0",
+  "description": "less app",
+  "main": "index.js",
+  "scripts": {
+    "compile:watch": "less-watch-compiler"
+  },
+  "author": "joydip",
+  "license": "ISC",
+  "devDependencies": {
+    "less-watch-compiler": "^1.16.3"
+  }
+}
