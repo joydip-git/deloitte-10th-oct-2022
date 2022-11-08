@@ -57,3 +57,7 @@ https://www.techtarget.com/whatis/definition/IFrame-Inline-Frame#:~:text=The%20m
 
 JS execution:
 https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0
+
+
+regex:
+https://html.com/attributes/input-pattern/
