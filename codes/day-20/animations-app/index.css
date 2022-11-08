@@ -1,0 +1,35 @@
+@keyframes colorAnimation {
+  0% {
+    background-color: rgba(255, 0, 0, 0.65);
+  }
+  25% {
+    background-color: rgba(64, 50, 100, 0.427);
+  }
+  50% {
+    background-color: hsla(38, 100%, 80%, 0.861);
+  }
+  100% {
+    background-color: hsla(240, 100%, 80%, 0.67);
+  }
+}
+span {
+  font-size: small;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px lightcoral;
+  background-color: aquamarine;
+  animation-name: colorAnimation;
+  animation-duration: 6s;
+  animation-iteration-count: 2;
+  animation-direction: reverse;
+  animation-timing-function: ease;
+  transition: width 5s, font-size 5s;
+}
+span:hover {
+  width: 400px;
+  font-size: larger;
+}
